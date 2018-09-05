@@ -2,6 +2,15 @@
 
 Последовательность действий:
 
+0) Установить RSEM, Snakemake и bedtools согласно инструкциям:
+
+https://github.com/deweylab/RSEM
+
+https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+
+sudo apt-get install bedtools
+(https://bedtools.readthedocs.io/en/latest/content/installation.html)
+
 1) создать индекс для bowtie2 и RSEM:
 
 bowtie2-build -f /PATHTOREFERENCE/GDTM01.1.filtered.fsa_nt /PATHTOREFERENCE/PisumSativum_bwt
