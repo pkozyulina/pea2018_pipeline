@@ -14,9 +14,9 @@ sudo apt-get install bedtools
 
 1) создать индекс для bowtie2 и RSEM:
 
-bowtie2-build -f /PATHTOREFERENCE/GDTM01.1.filtered.fsa_nt /PATHTOREFERENCE/PisumSativum_bwt
+bowtie2-build -f /PATHTOREFERENCE/reference.fasta INDEXNAME
 
-rsem-prepare-reference /PATHTOREFERENCE/GDTM01.1.filtered.fsa_nt /PATHTOREFERENCE/PisumSativum_rsem
+rsem-prepare-reference --bowtie2 --bowtie2-path /PATHTOBOWTIE2/bowtie2-2.3.3.1-linux-x86_64/ /PATHTOREFERENCE/reference.fasta INDEXNAME
 
 
 2) Скопировать все bam файлы в отдельную директорию
